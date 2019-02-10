@@ -1,0 +1,113 @@
+x = 7
+def scope():
+    global x
+    x = 4 #changes global variable x
+    y = 6
+    print(x, y)
+print(x)
+scope()
+print(x)
+
+#lists are mutable and can change their content
+colors = ["black", "blue", 5, "red"]
+guess = input("Guess the oolor  ")
+if guess in colors:
+    print("you guessed correctly")
+else:
+    print("try again")
+
+musicians = ["journey", "Lady GaGa", "Iron Maiden", "Black Sabbath", "Beastie Boys"]
+print(musicians)
+musicians[4] = "John Lennon"
+print(musicians)
+musicians.append("Beyonce")
+print(musicians)
+
+#tuple example
+authors =("king", "jackson", "hill", "zanoli")
+print(authors)
+print(authors[0])
+
+#dictionary set of key value pairs with keys unique inside dictionary
+#delete a key pair with del command list(d) returns all keys
+stats = {"height": "6'2",
+         "weight": 160,
+         "age": "33"}
+guess = input("guess my weight ")
+guess = int(guess)
+if guess == stats["weight"]:
+    print("good guess")
+else:
+    print("wrong")
+
+music = dict()
+music["bill gates"] = "computer"
+print(music)
+music["Led Zepplin"] = "starry night"
+print(music)
+import random
+#dictionary practice includes an item with a key and value
+students = {"Tom": ["ID0001",25,"A"],
+            "Alice": ["ID0002",35,"A"],
+            "Jim":["ID0003",45,"A"],
+            "Dan": ["ID0004",55,"A"]
+            }
+print(students["Tom"])
+students["Fred"]=25 #add an item
+del students["Fred"]
+print(list(students.keys())) #take out keys
+print(list(students.values())) #take out values
+#combine dictionaries with lists
+print(len(students["Alice"]))
+number = (len(students["Alice"]))
+new = random.randint(1, number)
+print(new)
+print(students["Alice"][2])
+#Give each key its own dictionary value
+studentsa = {
+        "Tom":{"id": "ID001", "age":25, "grade":"A"},
+        "Bob": {"id": "ID002", "age": 35, "grade": "B"},
+        "Jim":{"id": "ID003", "age":45, "grade":"A"},
+        "Jason":{"id": "ID004", "age":55, "grade":"A"}
+}
+print(studentsa["Tom"]["age"])
+
+
+
+
+print()
+#list practice
+A = [5, 6, 8, 9]
+A = A + [1]
+#add a string, strings are iterable cant do with integers they are not iterable
+#lists are mutable strings are imutable
+A = A + ["BCD"]
+A = A + list("BCD")
+A = A + [1,2, 3]
+A = A + list(str(5678))
+A = A + [[5,6,7,8]]
+print(A)
+A.append([10,9])
+print(A)
+A.insert(2,444)
+print(A)
+del A[2]
+A.remove(5) #removes 1st occurrence of 5
+print(A)
+A.pop(3) #removes item3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
