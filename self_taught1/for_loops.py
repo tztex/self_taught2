@@ -79,7 +79,32 @@ for i in list1:
     for j in list2:
         added.append(i + j)
 print(added)
+print()
 
-
+#made up of variable and iterable
+#range creates range iterable of numbers
+for number in range(1,11,2):
+    print(number)
+#count vowels
+vowels = 0
+consonants = 0
+for letter in "Hello":
+    if letter.lower() in "aeiou":
+        vowels = vowels + 1
+    elif letter == "":
+        pass
+    else:
+        consonants = consonants + 1
+print("There are {} vowels".format(vowels))
+print("There are {} consonants".format(consonants))
+print()
+students = {
+    "male": ["Tom", "Charlie", "Harry", "Frank"],
+    "female": ["Sara", "Huda", "Samantha", "Emily", "Elizabeth"]
+    }
+for key in students.keys(): #iterable of keys
+    for name in students[key]:
+        if "a" in name:
+            print(name)
 
 

@@ -111,3 +111,11 @@ while len(L) < 3:
     L.append(new_name)
 print("sorry list is full")
 print(L)
+from random import choice
+#baby example from udemy
+questions = ["What color is sky", "why do I I have to go to bed?", "why are cars red? "]
+question = choice(questions)
+answer = input(question).strip().lower()
+while answer != "just because":
+    answer = input("Why:").strip().lower()
+print("oh okay")
