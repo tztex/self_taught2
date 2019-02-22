@@ -32,6 +32,7 @@ print(fiveparam(2, 4, 6, 3, 4))
 def first(x):
     return x / 2
 
+
 def second(x):
     return x * 4
 
@@ -43,7 +44,7 @@ print(second(b))
 # reverse
 def rev(text):
     return text[::-1]
-
+print(rev('Tom'))
 
 # scope examples, cannot change global inside function with same local
 # you can use global variable but not change it
