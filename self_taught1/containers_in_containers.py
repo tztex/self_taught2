@@ -2,13 +2,13 @@
 
 names = ["Tom", "Jim", "Bill"]
 team = ["jets", "cowboys", "raiders"]
-namteam = (names, team)
+namteam = (names, team)  # list inside tuple
 print(namteam)
 print(namteam[1])
 
 #mapping key value pair is called mapping
 # key values and maps with tuples( ) are immutable,
-# list[ ] are interable and mutable
+# list[ ] are iterable and mutable
 # and dictionaries { } ford_city is dictionary
 ford_city = {"location":
                  (40.769450,
@@ -23,12 +23,12 @@ print(ford_city)
 print(type(ford_city))
 print("friends" in ford_city)
 print(ford_city["location"])
-ford_city["founded"] = 1776
+ford_city["founded"] = 1776  # add key value to dictionary
 print(ford_city)
 print(ford_city["facts"])
 del ford_city["facts"]
 print((ford_city))
-
+print()
 #tuple list example
 locations = [(40.7128, 74.0059), (31.0461, 34.8516), (8.3405, 115.0920)]
 print(locations[0])

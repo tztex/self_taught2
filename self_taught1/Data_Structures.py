@@ -3,11 +3,10 @@
 # putting item on stack is pushing
 # add and remove from stack, only add remove last item
 # removing from stack is popping
-# called a LIFO data stucture, last in first out
+# called a LIFO data structure, last in first out
 
 # a queue is a data structure and is FIFO
 # ex line of people first person gets ticket
-from pythonds3 import Stack
 
 
 class Stack:
@@ -31,22 +30,20 @@ class Stack:
         return len(self.items)  # returns number of items
 
 
-from pythonds3.basic.stack import Stack
-
 stack = Stack()
 print(stack.is_empty())
 stack.push(1)
 print(stack.is_empty())
 for i in range(1, 11):
     stack.push(i)
-print(stack._items)
+print(stack.items)
 print(stack.size())
 stack.pop()
-print(stack._items)
+print(stack.items)
 stack.push(5)
 for i in range(1,10):
     stack.push(i)
-print(stack._items)
+print(stack.items)
 print(stack.peek())
 
 # print hello backwards
@@ -55,20 +52,19 @@ for c in "Thomas":
     stack3.push(c)
 
 reversed_string = ""
-for i in range(len(stack3._items)):
+for i in range(len(stack3.items)):
     reversed_string += stack3.pop()
 print(reversed_string)
 
 yester = Stack()
 for c in "Yesterday":
     yester.push(c)
-print(yester._items[0])
+print(yester.items[0])
 reversed_string = ""
-for i in range(len(yester._items)):
+for i in range(len(yester.items)):
     reversed_string += yester.pop()
 print(reversed_string)
 print()
-from queue import Queue
 
 
 class Queue:

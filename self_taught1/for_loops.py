@@ -29,7 +29,7 @@ for show in coms:
 print(all_shows)
 
 #change items to all upper case by iterating through the list
-tv = ["GOT", "Narcos", "Vice"]
+tv = ["got", "Narcos", "Vice"]
 i = 0
 for drama in tv:
     new = tv[i]
@@ -102,7 +102,7 @@ students = {
     "male": ["Tom", "Charlie", "Harry", "Frank"],
     "female": ["Sara", "Huda", "Samantha", "Emily", "Elizabeth"]
     }
-for key in students.keys(): #iterable of keys
+for key in students.keys():  # iterable of keys
     for name in students[key]:
         if "a" in name:
             print(name)
