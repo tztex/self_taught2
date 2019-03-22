@@ -2,7 +2,7 @@ fname = input('Enter file: ')
 if len(fname) < 1: fname = 'clown.txt'
 hand = open(fname)
 
-di = dict()  # make a dictionary
+di = dict()  # make a dictionary with key value pair
 for lin in hand:  # go through the file
     lin = lin.rstrip()  # remove white space
     wds = lin.split()  # splits into words
@@ -14,7 +14,7 @@ for k, v in di.items():
     # print(k, v)
     newt = (v, k)  # new local tuple value, key
     # print(newt)
-    tmp.append(newt)  # list of tuples in value, key into tmp list
+    tmp.append(newt)  # list of tuples in value, key into tmp list to sort
 tmp = sorted(tmp, reverse=True)
 for v, k in tmp[: 5]:
     print(k, v)
