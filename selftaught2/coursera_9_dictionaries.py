@@ -43,7 +43,6 @@ print('Counts', counts)
 # items give both in tuples inside list
 counts = {'chuck': 1, 'fred': 42, 'jan': 100}
 for key in counts:
-    print(len(counts))
     print(key, counts[key])
 print(list(counts))
 print(counts.keys())

@@ -1,9 +1,11 @@
 # figure out who has sent the greatest number of mail messages
-# The program looks for 'From ' lines and takes the second word of those lines as the person
-# who sent the mail.
-#  creates a Python dictionary that maps the sender's mail address to a count of the number of
-#  times they appear in the file. After the dictionary is produced, the program reads through
-#  the dictionary using a maximum loop to find the most prolific committer.
+# The program looks for 'From ' lines and takes the second word of those lines
+# as the person who sent the mail.
+# creates a Python dictionary that maps the sender's mail address to a count of
+# the number of
+# times they appear in the file. After the dictionary is produced, the program reads through
+# the dictionary using a maximum loop to find the most prolific committer.
+# From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 
 counts = dict()  # create empty dictionary
 email = list()
@@ -14,6 +16,7 @@ for line in handle:  # loop through file
         continue
     words = line.split()  # gives each word in own line
     email.append(words[1])  # adding each email occurrence to email list
+print(email)
 for word in email:  # loop through email list
     counts[word] = counts.get(word, 0) + 1  # adds to dicitonary and adds one for each occurrence
     continue
